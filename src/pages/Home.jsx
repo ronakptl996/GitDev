@@ -9,9 +9,11 @@ import {
   TabContent,
 } from "reactstrap";
 import Users from "../components/Users";
+import Bookmarked from "../components/Bookmarked";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("1");
+
   return (
     <div className="container mt-5">
       <Nav tabs>
@@ -43,7 +45,7 @@ const Home = () => {
         <TabPane tabId="2">
           <Row>
             <Col sm="12">
-              <h4>Tab 2 Contents</h4>
+              <Bookmarked />
             </Col>
           </Row>
         </TabPane>
